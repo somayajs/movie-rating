@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { IMovie } from "./../movie";
 
 @Injectable({
   providedIn: 'root'
@@ -6,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class CollectableService {
 
   constructor() { }
-  getMovies() {
+  getMovies(): IMovie[]{
     return [
       {
         "name": "The Shawshank Redemption (1994)",

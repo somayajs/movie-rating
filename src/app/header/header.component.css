@@ -1,0 +1,27 @@
+header {
+  padding: 15px 15px 0 15px;
+  background-color: #41a874;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+h3 {
+  margin-top: -10px;
+  margin-bottom: 5px;
+  color: #fff;
+  padding: 5px;
+  border: 5px solid #fff;
+  text-align: center;
+  font-size: 12px;
+}
+#header-container {
+  text-align: right;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #d4d3d3;
+}
+

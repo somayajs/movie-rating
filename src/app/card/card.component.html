@@ -1,0 +1,14 @@
+<div>
+<img class="winning" [src]="movie.award" alt="">
+<p class="rating">{{movie.rating}}</p>
+<div class="img-container">
+  <img [src]="movie.img" alt="">
+
+</div>
+<h4 class="name">{{movie.name | uppercase}}</h4>
+<p class="category">{{movie.category}}</p>
+<p class="actor"><span class="actor-decorator">CAST:</span> {{movie.actor}}</p>
+<p class="description">{{movie.description | slice: 0: 200}}<span id="dots" *ngIf='!showText'>...</span><span id="more"
+    *ngIf='showText'>{{movie.description | slice: 200: movie.description.length-1}}</span></p>
+<button (click)="readMore()" id="toggle-btn">Read {{showText? 'less' : 'more'}}</button>
+</div>

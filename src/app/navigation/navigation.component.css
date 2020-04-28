@@ -1,0 +1,12 @@
+a{
+  margin: 20px 0 20px 40px;
+  margin-right: 0;
+  padding-top: 10px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+a:hover{
+  border-bottom: 1px solid #fff;
+
+}

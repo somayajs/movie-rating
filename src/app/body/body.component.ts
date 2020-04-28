@@ -9,7 +9,7 @@ import { CollectableService } from './../services/collectable.service'
 export class BodyComponent implements OnInit {
   constructor(private CollectableService: CollectableService ) { }
   ngOnInit(): void {
-    this.movies = this.CollectableService.getMovies();
+    this.CollectableService.getMovies().subscribe(data => this.movies = data);
   }
   movies: IMovie[];
 
